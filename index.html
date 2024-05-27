@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="styles.css" id="styles">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Hotel Paraiso</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">INICIO</a></li>
+                    <li><a href="#about">ACERCA DE</a></li>
+                    <li><a href="#rooms">CUARTOS</a></li>
+                    <li><a href="#contact">CONTACTOS</a></li>
+                    <li><button onclick="toogleStyle();">Cambiar tema</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="contour">Bienvenido a hotel paraiso</h1>
+            <p class="contour">El perfecto lugar para descansar</p>
+            <a href="#rooms" class="btn">Explorar nuestros cuartos</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre nosotros</h2>
+            <p>¡Bienvenido al Hotel Paraíso, donde tus sueños de escape se hacen realidad! Sumérgete en un oasis de lujo y serenidad, donde cada momento es una escapada celestial. Desde nuestras impresionantes vistas panorámicas hasta nuestras exquisitas comodidades, te invitamos a descubrir un mundo de indulgencia y relajación. Experimenta el verdadero paraíso en nuestro refugio exclusivo, donde cada detalle está cuidadosamente diseñado para garantizar una estancia inolvidable. ¡Déjanos llevarte a un viaje hacia el encanto y la elegancia en el corazón del Paraíso!</p>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2>Nuestros cuartos</h2>
+            <div class="room">
+                <img src="assets/img/room1.jpg" alt="Room 1">
+                <h3>Deluxe Room</h3>
+                <p>$150 per night</p>
+            </div>
+            <div class="room">
+                <img src="assets/img/room2.jpg" alt="Room 2">
+                <h3>Executive Suite</h3>
+                <p>$250 per night</p>
+            </div>
+            <div class="room">
+                <img src="assets/img/room2.jpg" alt="Room 3">
+                <h3>Executive Suite</h3>
+                <p>$250 per night</p>
+            </div>
+            <div class="room">
+                <img src="assets/img/room2.jpg" alt="Room 4">
+                <h3>Executive Suite</h3>
+                <p>$250 per night</p>
+            </div>
+            <!-- Más listado de cuartos -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactanos</h2>
+            <p>¿Tienes preguntas o quieres hacer una reservación? Contactanos!!</p>
+            <a href="formulario.html" class="btn-form">Contactar Ahora</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hotel Paradise. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script>
+  function toogleStyle() {
+  var stylesCSS = document.getElementById('styles');
+  if (stylesCSS.href.includes('styles.css')) {
+    stylesCSS.href = 'stylesB.css';
+  } else {
+    stylesCSS.href = 'styles.css';
+  }
+}
+</script>
+</body>
+</html>

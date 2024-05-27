@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles.css" id="styles">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">Hotel Paraiso</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="#">ACERCA DE</a></li>
+          <li><a href="#">CUATOS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+          <li><button onclick="toogleStyle();">Cambiar tema</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container">
+      <div class="form-container">
+        <form>
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="usuario">Nombre de usuario: </label></td>
+                <td><input type="text" id="usuario"></td>
+              </tr>
+              <tr>
+                <td><label for="pass">Contraseña: </label></td>
+                <td><input type="password" id="pass"></td>
+              </tr>
+              <tr>
+                <td><label for="pass2">Repetir contraseña: </label></td>
+                <td><input type="password" id="pass2"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><label for="direccion">Direccion: </label></td>
+                <td><input type="text" id="direccion"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><label for="ciudad">Ciudad: </label></td>
+                <td><input type="text" id="ciudad"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><label for="provincia">Provincia: </label></td>
+                <td><input type="text" id="provincia"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><label for="huespedes">Numero de huespedes: </label></td>
+                <td><input type="number" id="huespedes"></td>
+              </tr>
+              <tr>
+                <td><label for="habitacion">Tipo de habitacion: </label></td>
+                <td><select id="habitacion">
+                  <option value="NULL" selected disabled>-- Seleccione una opcion --</option>
+                  <option value="ind">Individual</option>
+                  <option value="dob">Doble</option>
+                  <option value="sui">Suite</option>
+                </select></td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr><td><label for="servicios">Servicios:</label></td></tr>
+              <tr>
+                <td></td>
+                <td><input type="checkbox" id="aire"></td>
+                <td><label for="aire">Aire acondicionado</label></td>
+                <td><input type="checkbox" id="almohadas"></td>
+                <td><label for="almohadas">Almohadas a la carta</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="checkbox" id="caja"></td>
+                <td><label for="caja">Caja fuerte</label></td>
+                <td><input type="checkbox" id="humo"></td>
+                <td><label for="humo">Detector de humo</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="checkbox" id="minibar"></td>
+                <td><label for="minibar">Minibar</label></td>
+                <td><input type="checkbox" id="mesa"></td>
+                <td><label for="mesa">Mesa de trabajo</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="checkbox" id="internet"></td>
+                <td><label for="internet">Conexión a internet</label></td>
+                <td><input type="checkbox" id="wifi"></td>
+                <td><label for="wifi">Wi-Fi</label></td>
+              </tr>
+            </tbody>
+          </table>
+          <table>     
+            <tbody>
+              <tr><td><label for="servicios">Pensión:</label></td></tr>
+              <tr>
+                <td></td>
+                <td><input type="radio" name="pen" id="al"></td>
+                <td><label for="al">Alojamiento</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="radio" name="pen" id="des"></td>
+                <td><label for="des">Desayuno</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="radio" name="pen" id="med"></td>
+                <td><label for="med">Media</label></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="radio" name="pen" id="com"></td>
+                <td><label for="com">Completa</label></td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr><td><label for="comentarios">Comentarios o sugerencias:</label></td></tr>
+              <tr><td></td><td><textarea id="comentarios" cols="60" rows="3"></textarea></td></tr>
+              <tr>
+                <td><label for="email">Email de contacto:</label></td>
+                <td><input type="email" id="email"></td>
+              </tr>
+            </tbody>
+          </table>
+          <input type="checkbox" id="politicas">
+          <label for="politicas"> Acepto las politicas de privacidad</label><br>
+          <center>
+            <input type="button" value="Enviar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="Limpiar"><br>
+          </center>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Hotel Paradise. All Rights Reserved.</p>
+    </div>
+  </footer>
+<script>
+  function toogleStyle() {
+  var stylesCSS = document.getElementById('styles');
+  if (stylesCSS.href.includes('styles.css')) {
+    stylesCSS.href = 'stylesB.css';
+  } else {
+    stylesCSS.href = 'styles.css';
+  }
+}
+</script>
+</body>
+</html>
